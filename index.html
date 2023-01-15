@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL SHORTNER</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- start nav bar -->
+    <nav class="nav-bar">
+        <div class="container">
+            <a class="logo" href="index.html">
+                <label class="logo">
+                    <img src="img/logo.png" alt="URL SHORTNER">
+                    URL SHORTNER
+                </label>
+            </a>
+            <input type="checkbox" id="check">
+            <ul class="ul-nav">
+                <li class="li-nav"><a class="active" href="index.html">home</a></li>
+                <li class="li-nav"><a href="#services">services</a></li>
+                <!-- <li class="li-nav menu">
+                    <input type="checkbox" id="subcheck">
+                    <label for="subcheck" class="sub-btn">
+                        pages
+                    </label>
+                    <ul class="submenu">
+                        <li class="li-navdrop"><a href="#">How it's work</a></li>
+                        <li class="li-navdrop"><a href="#">404 Page</a></li>
+                    </ul>
+
+                </li> -->
+                <li class="li-nav"><a href="contact.html">contact</a></li>
+            </ul>
+
+            <label for="check" class="checkbtn"><i class="fa-solid fa-bars-staggered"></i></label>
+
+        </div>
+    </nav>
+    <!-- end nav bar -->
+
+    <span class="pattern"></span>
+    <section class="sec-1">
+        <div class="container">
+
+
+            <div class="sec-1-left">
+                <h5>Easily shorten your links</h5>
+                <h2>Shorten URLs <br> in seconds</h2>
+                <div class="link">
+                    <a href="#start-short">Start Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                    <a href="#services">How it's Work ? <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+
+            <div class="sec-1-right">
+                <div class="img">
+                    <img src="img/short-img.png" alt="short link">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- start sec-2 -->
+    <section class="sec-2" id="start-short">
+        <div class="container">
+
+            <div class="forms">
+                <form class="form">
+                    <input class="text" type="text" placeholder="Your Link Here">
+                    <input class="send" type="submit" value="Shorten">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- end sec-2 -->
+    <!-- start sec-3 -->
+    <section class="sec-3">
+        <div class="container">
+
+            <div class="shorten-url">
+                <div class="shorten-form">
+                    <label class="site-name">Site Name</label>
+                    <input class="url-short" id="link1" value="Link one">
+                    <button class="copy-url" data-clipboard-target="#link1"> copy link</button>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- end sec-3 -->
+    <!-- start sec-4 -->
+    <section class="sec-4" id="services">
+        <div class="container">
+            <div class="box">
+                <i class="fa-solid fa-jet-fighter-up"></i>
+                <h2>Short Links</h2>
+                <p>short links speedly</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-link"></i>
+                <h2>more than one link</h2>
+                <p>Shorten a link with more than 10 links</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <h2>No registration required</h2>
+                <p>You don't need to signup to shorten the link</p>
+            </div>
+        </div>
+    </section>
+    <!-- start sec-4 -->
+    <footer>
+
+        <div class="container">
+            <span class="pattern" style="z-index: -1;"></span>
+
+            <a class="logo" href="index.html">
+                <label class="logo">
+                    <img src="img/logo.png" alt="URL SHORTNER">
+                    URL SHORTNER
+                </label>
+            </a>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+            <h4>Stay in Touch</h4>
+            <div class="s-icon">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+            <h5>© URL SHORTNER, All Rights reserved-2023</h5>
+        </div>
+    </footer>
+</body>
+<script src="js/dist/clipboard.min.js"></script>
+
+<script>
+    new ClipboardJS('.copy-url');
+
+</script>
+
+</html>
